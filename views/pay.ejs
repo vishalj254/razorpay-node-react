@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style1.css">
+    <style>
+    .razorpay-payment-button{
+        color: aqua;
+        background-color: black;
+        padding: 10;
+        font-size: large;
+    }
+    </style>
+</head>
+<body>
+
+        <form action="/razorpay/success" method="POST"> 
+            <script
+                src="https://checkout.razorpay.com/v1/checkout.js"
+                data-key="rzp_test_GQ6XaPC6gMPNwH" // Enter the Key ID generated from the Dashboard
+                data-amount="50000" 
+                data-currency="INR"
+                data-buttontext="Pay with Razorpay"
+                data-name="CSEP Campusshala Education Pvt. Ltd."
+               // data-description="CSEP Campusshala Education Pvt. Ltd."
+                data-image="/images/campus.png"
+                data-prefill.name=""
+                data-prefill.email=""
+                data-prefill.contact=""
+                data-theme.color="#4444FF"
+            ></script>
+            <div class="button" id="button-7">
+                <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
+                <a onclick="">Let's Go!</a>
+              </div>
+            <input type="hidden" custom="Hidden Element" name="hidden">
+            </form>
+</body>
+</html>
